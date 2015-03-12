@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<head>
+    <title> Git mv</title>
+    <meta charset="UTF-8">
+    <link href="../css/style.css" rel="stylesheet" type"text/css">
+</head>
+
+<body>
+	<div id="titre"> 
+			<h1>Le fantastique guide de Git</h1>
+	</div>
+	<div id="nav">
+    <nav>
+        <ul> 
+		<li> <a href="../index.html">Menu </a> </li>
+		</ul>
+    </nav>
+	</div>
+	<div id="corps">
+		
+		<h3>la commande git mv </h3>
+    <section class="descriptif">
+        git mv permet de renommer des fichiers, un répertoire ou un lien symbolique <br>
+        (sauvegarde/supprime/créer). On peut aussi renommer sans avoir à utiliser la commande mv.    
+    </section>
+    
+    <section class="affichage">
+        <h4>Syntaxe</h4>
+            <code>- git mv "toto.txt tata.txt"</code>
+        <h4>Affichage</h4>
+            <div class="code">
+            <code>
+            # On branch master<br>
+            # Changes to be committed:<br>
+            #   (use "git reset HEAD <file>..." to unstage)<br>
+            #<br>
+            #	renamed:    toto.txt -> tata.txt<br>
+            #<br>
+            </code>
+            </div>
+    <section/>
+
+    <section class="affichage">
+        
+			<code><h4>- git mv -f </h4></code>
+            <section>
+      ATENTION cette commande force le changement de nom d'un dossier et detruit les dossiers existant sous le même nom.
+            </section>
+        <h4>Affichage</h4>
+             <div class="code">
+            <code> user@lubuntu-13:~/Bureau$ ls<br>
+		Documents  titi.txt  toto.txt  zfejejksdhficoqklsc<br>
+		user@lubuntu-13:~/Bureau$ git mv -f toto.txt titi.txt<br>
+		user@lubuntu-13:~/Bureau$ ls<br>
+		Documents  titi.txt  zfejejksdhficoqklsc
+	    </code>
+            </div>
+    <section/>
+    
+    
+        <section class="affichage">
+        <code><h4>- git mv -n "fichier ancien" "fichier nouveau"</h4></code>
+            <section>
+            la commande permet de montrer les résultats sans faire aucun changement.
+            .</section>
+        <h4>Affichage</h4>
+         <div class="code">
+            <code>
+            Checking rename of 't.txt' to 'a.txt'<br>
+            Renaming t.txt to a.txt<br>
+            user@lubuntu-13:~/Bureau$ ls<br>
+            Documents  t.txt<br>
+</code>
+            </div>
+    <section/>
+    
+    
+    
+    </div>
+    <footer>        
+        <p>G© Groupe d'IN202 2014-2015 UVSQ - Article par Calae91 et l'aasistance de Chaouki08(git mv)</p>
+    </footer>
+
+</body>
