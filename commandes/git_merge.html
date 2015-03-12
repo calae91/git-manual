@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<head>
+    <title> Git merge </title>
+    <meta charset="UTF-8">
+    <link href="../css/style.css" rel="stylesheet" type"text/css">
+</head>
+
+<body>
+	<div id="titre"> 
+			<h1>Le fantastique guide de Git</h1>
+	</div>
+	<div id="nav">
+    <nav>
+        <ul> 
+		<li> <a href="../index.html">Menu </a> </li>
+		</ul>
+    </nav>
+	</div>
+	<div id="corps">
+		
+		<h3>la commande git merge</h3>
+    <section class="descriptif">
+      Fusionne deux branches de l'arbre de travail en incorporant les changements de l'une à l'autre.</br>
+      ATTENTION:utiliser cette commande avec des changements non commité peut vous laisser dans une situation qu'il sera difficile d'annuler.
+    </section>
+
+
+
+    <section class="affichage">
+        <h4>Syntaxe</h4>
+            <code>- git merge -m</code>
+        <h4>Utlisation</h4>
+             <code> git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]</br>
+        [-s <strategy>] [-X <strategy-option>] [-S[<key-id>]]</br>
+        [--[no-]rerere-autoupdate] [-m <msg>] [<commit>…]</code>
+    <section/>
+
+
+    <section class="affichage">
+        
+			<code><h4>- git stash apply </h4></code>
+            <section>
+            Cette commande règle le message de commit à être utilisée pour le merge commit ( dans le cas où une est créé ). 
+        Si --log est spécifié, un shortlog des commits fusionnés sera ajouté au message spécifié.
+        La commande git fmt-merge-msg peut être utilisé pour donner une bonne valeur par défaut à git merge pour des invocations automatisé .
+       
+        </section>
+        <h4>Affichage</h4>
+             <div class="code">
+            <code>'git merge' [-m <msg>] [<commit>...]</code>
+            </div>
+    <section/>
+    
+    
+        <section class="affichage">
+        <code><h4>- git merge squash </h4></code>
+            <section>
+            La commande "merge squash" modifie l'index et l'arbre de travail afin de simuler une fusion entre deux branches. Ne créé pas de commit, ne bouge pas le HEAD.</br>
+"--no-squash" créé la fusion et le commit associé
+            </section>
+        <h4>Affichage</h4>
+         <div class="code">
+            <code> Exemple de l'affichage de la commande dans le terminal </code>
+            </div>
+    <section/>
+    
+    
+    <section class="affichage">
+            <code><h4>- git merge -ff-only </h4></code>
+            
+             <section>
+                    Cette commande permet de fusionner la branche spécifiée dans la la branche courante, mais génère toujours un 
+                    merge-commit ( même si c'était un "fost-foward merge" (litt. un merge avance rapide) ). Cette commande est utile pour référencer        
+                    tous les merge qui ont lieux dans le répertoire.
+             </section>
+             
+        <h4>Affichage</h4>
+             <div class="code"><code>
+            Exemple de l'affichage de la commande dans le terminal
+            </code>
+            </div>
+    </section>
+    
+    
+    
+    <section class="affichage">
+            <code><h4>- git --squash </h4></code>
+            
+             <section>
+                Descriptif de la commande détaillé
+                
+             </section>
+             
+        <h4>Affichage</h4>
+            <code> <div class="code">
+			Exemple de l'affichage de la commande dnas le terminal
+            </code>
+            </div>
+    </section>
+    
+    
+    <section class="affichage">
+            <code><h4>- git merge --no-commit </h4></code>
+            
+             <section>
+             Si on pense qu'un merge ne va pas fonctionner ou ne pas auto-commiter,<br>
+             donne la possibilité à l'utilisateur de modifier le résultat du merge avant de commiter.
+                
+             </section>
+             
+        <h4>Affichage</h4>
+            <code> <div class="code">
+			Updating 2b4c224..3348ca1<br>
+Fast-forward<br>
+ b.txt => a.txt | 0<br>
+ toto.txt       | 0<br>
+ 2 files changed, 0 insertions(+), 0 deletions(-)<br>
+ rename b.txt => a.txt (100%)<br>
+ create mode 100644 toto.txt
+            </code>
+            </div>
+    </section>
+    
+    
+
+    <section class="affichage">
+            <code><h4>- git merge --abort </h4></code>
+            
+             <section>
+                interompe le règlement de conflit et essaye de reconstruire à l'état pré-merge.
+                
+             </section>
+             
+        <h4>Affichage</h4>
+            <code> <div class="code">
+			Exemple de l'affichage de la commande dans le terminal
+            </code>
+            </div>
+    </section>
+    
+    
+    
+    </div>
+    <footer>        
+        <p>G© Groupe d'IN202 2014-2015 UVSQ - Article par Calae91 (--abort/--no-commit), Cricri3007 (merge/squatch), incognitomada (merge -m/-ff-only</p>
+    </footer>
+
+</body>
