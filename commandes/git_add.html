@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<head>
+    <title> Git add </title>
+    <meta charset="UTF-8">
+    <link href="../css/style.css" rel="stylesheet" type"text/css">
+</head>
+
+<body>
+	<div id="titre"> 
+			<h1>Le fantastique guide de Git</h1>
+	</div>
+	<div id="nav">
+    <nav>
+        <ul> 
+		<li> <a href="../index.html">Menu </a> </li>
+		</ul>
+    </nav>
+	</div>
+	<div id="corps">
+		
+		<h3>la commande git add</h3>
+    <section class="descriptif">
+       le git add permet d'ajouter le contenus des fichiers a l'index.
+    </section>
+
+    <section class="affichage">
+        <h4>Syntaxe</h4>
+            <code>Ecrire ici la commande</code>
+        <h4>Affichage</h4>
+            <div class="code">
+            <code>Exemple de l'affichage de la commande dans le terminal</code>
+            </div>
+    <section/>
+
+
+
+    <section class="affichage">
+        
+			<code><h4>- git add -i </h4></code>
+            <section>
+            lance une interface interactive permettant l'accès rapide au commande : status,update,revert,add untracked,patch,diff,quit,help
+            </section>
+        <h4>Affichage</h4>
+             <div class="code">
+            <code> What now> status<br>
+           staged     unstaged path<br>
+<br>
+<br>
+*** Commands ***<br>
+  1: [s]tatus	  2: [u]pdate	  3: [r]evert	  4: [a]dd untracked<br>
+  5: [p]atch	  6: [d]iff	  7: [q]uit	  8: [h]elp<br>
+What now>
+            </div>
+    <section/>
+    
+    
+        <section class="affichage">
+        <code><h4>- git add -f </h4></code>
+            <section>
+            Git add -f est une fonction qui autorise l'ajout de fichiers qu'on a ignorés.
+            </section>
+        <h4>Affichage</h4>
+         <div class="code">
+            <code> pas encore au point </code>
+            </div>
+    <section/>
+    
+    
+    <section class="affichage">
+            <code><h4>- git add -n </h4></code>
+            
+             <section>
+                   git add -n permet de visualiser les derniers commits de la branche où n correspond au nombre de commits que l'on cherche à visualiser en partant des plus récents<br>
+                   La commande est assez inutile car le git log montre les commits dans le même ordre.
+             </section>
+             
+        <h4>Affichage</h4>
+             <div class="code">
+             <code>
+            user@lubuntu-13:~/Bureau$ git add -3<br>
+            commit a6f56860ab635fce4301303506b1915ca449cb76<br>
+            Author: Utilisateur <user@lubuntu-13.04><br>
+            Date:   Tue Mar 10 13:03:10 2015 +0100<br>
+            <br>
+                aaaaa<br>
+            <br>
+            commit 711e88301b29adebbfc11efa569219e6e8cf3cc1<br>
+            Author: Utilisateur <user@lubuntu-13.04><br>
+            Date:   Tue Mar 10 12:55:36 2015 +0100<br>
+            <br>
+                esdrtfghj<br>
+            <br>
+            commit 8c5a900980dabbd0a9493f230418b75d31f3c453<br>
+            Author: Utilisateur <user@lubuntu-13.04><br>
+            Date:   Tue Mar 10 12:45:19 2015 +0100<br>
+            <br>
+            gaga ajust<br>
+            </code>
+            </div>
+    </section>
+    
+    
+    </div>
+    <footer>        
+        <p>G© Groupe d'IN202 2014-2015 UVSQ - Article par Calae91(git add -i,git add -n) avec afwanito92 (git add -f) et chaouki08 (git add)</p>
+    </footer>
+
+</body>
